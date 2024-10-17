@@ -1,61 +1,67 @@
 # git
 
 ## general
----
-~ - home directory. on Windows it's C:/%USERS%/%USER%
 
-.. - higher folder
+* ~ - home directory. on Windows it's C:/%USERS%/%USER%
 
-. - current folder
+* .. - higher folder
 
-pwd - *p*rint *w*riting *d*irectory
+* . - current folder
 
-cd (directory)- *c*hange *d*irectory
+* pwd - **p**rint **w**riting **d**irectory
 
-ls (-a) (-la) - *l*i*s*t contents
+* cd (directory)- **c**hange **d**irectory
 
-mkdir (name) (-p) - *m*a*k*e a *dir*ectory
+* ls (-a) (-la) - **l**i**s**t contents
 
-touch (name) - create a file
+* mkdir (name) (-p) - **m**a**k**e a **dir**ectory
 
-cp (name) (name2) ... (directory) - copy files to a directory
+* touch (name) - create a file
 
-mv (name) (name2) ... (directory) - move files to a directory
+* cp (name) (name2) ... (directory) - copy files to a directory
 
-cat (name) - read file contents
+* mv (name) (name2) ... (directory) - move files to a directory
 
-rm (name) (-r) (-rf)- remove file
+* cat (name) - read file contents
 
-rmdir (name) - remove directroy
+* rm (name) (-r) (-rf)- **r**e**m**ove file
 
--careful! files or directories removed by git commands cannot be restored!-
+* rmdir (name) - **r**e**m**ove directroy
 
-clip < (name) - copy contents to clipdoard
+* *careful! files or directories removed by git commands cannot be restored!*
 
-Tab - press to autocomplete or show options
+* clip < (name) - copy contents to **clip**doard
+
+* Tab - press to autocomplete or show options
 
 ## git commands
----
-git init - *init*ialise a git repository (creates a .git file)
 
-rm -r ./git - undo
+* git init - **init**ialise a git repository (creates a .git file)
 
-git status - added and not added files
+* rm -r ./git - undo
 
-git add (name) (--all) - add files
+* git status - added and not added files
 
-git commit -m "(commit message here)" - commit change
+* git add (name) (--all) - add files
 
-git push -u (project_name) master - connect current project and github repository the first time
+* git commit -m "(commit message here)" - commit change
 
-git push - the same afterwards
+* git remote add (project_name) (SSH) 
+
+* git push -u (project_name) master - connect current project and github repository the first time
+
+* git push - the same afterwards
 
 ## initialise connection (cmd)
----
-ssh-keygen -t ed25519 -C (github email) - create SSH key
 
--usually keys are stored at ~/.ssh
+* ssh-keygen -t ed25519 -C (github email) - create SSH key
 
-id_ed25519.pub - public key
+_usually keys are stored at ~/.ssh_
 
-id_ed25519 - private key
+_example: _
+
+* id_ed25519.pub - public key
+
+* id_ed25519 - private key
+
+_public keys always end with ".pub". don't share your private keys with anyone._
