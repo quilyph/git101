@@ -28,11 +28,15 @@
 
 * rmdir (name) - **r**e**m**ove directroy
 
-* *careful! files or directories removed by git commands cannot be restored!*
+*careful! files or directories removed by git commands cannot be restored!*
 
 * clip < (name) - copy contents to **clip**doard
 
 * Tab - press to autocomplete or show options
+
+## git terms
+
+* HEAD - commit in current use
 
 ## git commands
 
@@ -42,15 +46,29 @@
 
 * git status - added and not added files
 
+* git log (--oneline) - view existing commits (press Q to exit)
+
 * git add (name) (--all) - add files
 
 * git commit -m "(commit message here)" - commit change
 
-* git remote add (project_name) (SSH) 
+* git remote add (project_name, "origin"...) (SSH) 
 
 * git push -u (project_name) master - connect current project and github repository the first time
 
 * git push - the same afterwards
+
+* git branch - view branches
+
+## git conditions
+
+* untracked
+
+* staged
+
+* modified
+
+* tracked
 
 ## initialise connection (cmd)
 
@@ -58,7 +76,7 @@
 
 _usually keys are stored at ~/.ssh_
 
-_example: _
+_example:_
 
 * id_ed25519.pub - public key
 
